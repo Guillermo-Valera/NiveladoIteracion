@@ -1,0 +1,2 @@
+C:\REPO\OMEN\PrototipoII\obj\Debug\Unity.AI.Navigation.csproj.AssemblyReference.cache
+C:\REPO\OMEN\PrototipoII\obj\Debug\Unity.AI.Navigation.csproj.CoreCompileInputs.cache

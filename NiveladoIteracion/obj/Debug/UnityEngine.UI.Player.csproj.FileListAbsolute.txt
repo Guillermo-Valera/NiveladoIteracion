@@ -1,0 +1,4 @@
+C:\REPO\OMEN\PrototipoII\obj\Debug\UnityEngine.UI.Player.csproj.AssemblyReference.cache
+C:\REPO\OMEN\PrototipoII\obj\Debug\UnityEngine.UI.Player.csproj.CoreCompileInputs.cache
+C:\REPO\OMEN\PrototipoII\obj\Debug\UnityEngine.UI.dll
+C:\REPO\OMEN\PrototipoII\obj\Debug\UnityEngine.UI.pdb
