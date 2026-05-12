@@ -48,11 +48,9 @@ public class PlayerController : MonoBehaviour, PlayerActions.IGameplayActions
         if (Time.timeScale <= 0f) return;
         if (actionController.GetFullBodyState() != FullBodyState.None) return;
         
-        bool slowWalk = Keyboard.current[Key.LeftShift].isPressed;
+        bool slowWalk = Keyboard.current[Key.F].isPressed;
         
         MovePlayer(slowWalk ? MovementType.Crouch : MovementType.Walk);
-        
-        Debug.Log("Move");
     }
     
     // Accion de moverse (corriendo)
@@ -63,8 +61,6 @@ public class PlayerController : MonoBehaviour, PlayerActions.IGameplayActions
         if (actionController.GetFullBodyState() != FullBodyState.None) return;
         
         MovePlayer(MovementType.Run);
-        
-        Debug.Log("Run");
     }
     
     // Movimiento

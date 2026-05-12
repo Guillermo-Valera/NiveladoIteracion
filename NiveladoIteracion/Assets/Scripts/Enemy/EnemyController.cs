@@ -31,7 +31,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private EnemyShooter shooter;
     
     private NavMeshAgent agent;
-    private EnemyState currentState;
+    public EnemyState currentState;
 
     private void Awake()
     {

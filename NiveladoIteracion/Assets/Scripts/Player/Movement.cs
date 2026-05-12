@@ -19,11 +19,16 @@ public class Movement : MonoBehaviour
     [SerializeField] private float stepSoundTimer = 0.6f;
     private float _tempStepSoundTimer;
     
+    MeshRenderer meshRenderer;
+    [SerializeField] Material materialNormal;
+    [SerializeField] Material materialCrouch;
+    
     
     private void Awake()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
         pathLine = GetComponent<LineRenderer>();
+        meshRenderer = GetComponent<MeshRenderer>();
         
         pathLine.useWorldSpace = true;
         pathLine.positionCount = 0;
@@ -42,6 +47,16 @@ public class Movement : MonoBehaviour
         {
             PlaySteppingSounds();
         }
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            meshRenderer.material = materialCrouch;
+        }
+        if (Input.GetKeyUp(KeyCode.F))
+        {
+            meshRenderer.material = materialNormal;
+        }
+        
         UpdatePathVisual();
     }
 

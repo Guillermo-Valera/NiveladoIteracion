@@ -93,6 +93,7 @@ MonoBehaviour:
   rotationSpeed: 50
   vision: {fileID: 5429582447112324443}
   shooter: {fileID: 1674102699738275889}
+  currentState: 0
 --- !u!114 &6365954224331375529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,10 +138,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyVisionSource
   visionRange: 12
   visionAngle: 60
-  player: {fileID: 1586943364475121118}
+  player: {fileID: 0}
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
 --- !u!114 &3062678089558263259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,7 +210,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5415426066017574135}
-  - component: {fileID: 5832624491916005232}
+  - component: {fileID: 4165118598561798241}
+  - component: {fileID: 7264500955115331331}
   m_Layer: 8
   m_Name: TriggerKill
   m_TagString: Untagged
@@ -232,8 +234,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7949600256943107470}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &5832624491916005232
-CapsuleCollider:
+--- !u!114 &4165118598561798241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6823694894055912572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 392fa3c8232ae3648b5e2d900bcd90c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StealthKill
+  health: {fileID: 3347975801239415968}
+  enemyController: {fileID: 5353118579198851306}
+--- !u!65 &7264500955115331331
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -250,11 +266,9 @@ CapsuleCollider:
   m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  serializedVersion: 3
+  m_Size: {x: 0.34317705, y: 0.22650088, z: 0.43494895}
+  m_Center: {x: 0, y: 0.12272633, z: -0.20867467}
 --- !u!1 &8463061276479984762
 GameObject:
   m_ObjectHideFlags: 0
