@@ -130,7 +130,7 @@ public class PlayerShooter : MonoBehaviour
         Vector3 aimHeightCorrection = currentAimPoint;
         aimHeightCorrection.y = muzzle.position.y;
         
-        ammoVis.RemoveAmmo(); // Removes piece from gun
+        // ammoVis.RemoveAmmo(); // Removes piece from gun
         ShootResult result = weaponRaycast.Fire(muzzle, aimHeightCorrection, transform.root);
 
        /* Debug.DrawLine(
