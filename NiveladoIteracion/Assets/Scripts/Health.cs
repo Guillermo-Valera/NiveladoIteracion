@@ -2,6 +2,8 @@
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.SceneManagement;
+
 public class Health : MonoBehaviour
 {
 
@@ -37,6 +39,8 @@ public class Health : MonoBehaviour
         _currentHealth -= damage;
 
         _currentHealth = Mathf.Clamp(_currentHealth, 0, maxHealth);
+        
+        Debug.Log(_currentHealth);
         if (isPlayer)
             UpdateVignette();
 
@@ -71,6 +75,7 @@ public class Health : MonoBehaviour
         if (isPlayer)
         {
             // Player death logic
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
         else

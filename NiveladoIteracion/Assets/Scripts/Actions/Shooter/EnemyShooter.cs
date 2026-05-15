@@ -41,17 +41,19 @@ public class EnemyShooter : MonoBehaviour
         if (!CanShoot()) return;
 
         if (shootingCoroutine != null)
-        {
+        {    
             StopCoroutine(shootingCoroutine);//si ya esta disparando, reinicia el proceso de disparo
         }
-
+ 
         shootingCoroutine = StartCoroutine(ShootRoutine());//inicia la rutina de disparo
     }
     
     private IEnumerator ShootRoutine()
     {
         canShoot = false;
+        
 
+        
         //punto al que dispara (mejorar altura para no disparar a los pies)
         Vector3 targetPoint = currentTarget.position;
 

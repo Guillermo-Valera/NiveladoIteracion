@@ -136,8 +136,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9413499843ef464eb94fc4f2d7f0c44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyVisionSource
-  visionRange: 12
-  visionAngle: 60
+  visionRange: 5.7
+  visionAngle: 86.4
   player: {fileID: 0}
   obstacleMask:
     serializedVersion: 2

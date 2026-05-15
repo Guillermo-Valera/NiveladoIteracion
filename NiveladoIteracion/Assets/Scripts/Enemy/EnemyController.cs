@@ -64,10 +64,12 @@ public class EnemyController : MonoBehaviour
         // Prioridad a la visión
         if (vision && vision.GetPlayerSpotted())
         {
+            Debug.Log("Disparo");
             currentState = EnemyState.Alert;
         } 
         else if (currentState == EnemyState.Alert)
         {
+            Debug.Log("Disparo");
             currentState = EnemyState.Patrol;
             
             if(patrolPoints.Count > 0)
@@ -141,6 +143,7 @@ public class EnemyController : MonoBehaviour
     // ===== ALERTA =====
     private void HandleAlert()
     {
+
         agent.isStopped = true;  // Detener movimiento
 
         if (!vision || !vision.GetPlayerSpotted()) return;
@@ -152,6 +155,7 @@ public class EnemyController : MonoBehaviour
         // TODO: Disparar al player
         if (shooter)
         {
+
             shooter.SetTarget(player);
 
             if (shooter.CanShoot())
