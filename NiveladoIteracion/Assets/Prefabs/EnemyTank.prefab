@@ -88,7 +88,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   stopTime: 3
-  speed: 2
+  speed: 1
   maxTargetAngle: 50
   rotationSpeed: 35
   vision: {fileID: 5429582447112324443}
