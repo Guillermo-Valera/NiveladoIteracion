@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.VFX;
-using URPGlitch;
 using Random = UnityEngine.Random;
 
 public class VFXManager : MonoBehaviour
