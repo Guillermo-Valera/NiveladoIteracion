@@ -25,8 +25,7 @@ public class VFXManager : MonoBehaviour
     
     [Header("PostProcessingFX")]
     [SerializeField] Volume globalVolume;
-    [SerializeField] AnalogGlitchVolume analogGlitch;
-    [SerializeField] DigitalGlitchVolume digitalGlitch;
+
     
     [Header("Glitch")] 
     private float defaultScanLineJitter;
@@ -55,20 +54,7 @@ public class VFXManager : MonoBehaviour
 
     private void Start()
     {
-        if (globalVolume.profile.TryGet(out DigitalGlitchVolume dgFX))
-        {
-            digitalGlitch = dgFX;
-            defaultIntensityOfDigital = digitalGlitch.intensity.value;
-        }
 
-        if (globalVolume.profile.TryGet(out AnalogGlitchVolume aFX))
-        {
-            analogGlitch = aFX;
-            defaultScanLineJitter = analogGlitch.scanLineJitter.value;
-            defaultVerticalJump = analogGlitch.verticalJump.value;
-            defaultHorizontalShake = analogGlitch.horizontalShake.value;
-            defaultColorDrift = analogGlitch.colorDrift.value;
-        }
     }
 
     void InitializeDecalPools()
@@ -275,36 +261,6 @@ public class VFXManager : MonoBehaviour
     }
     
     //Post Processing
-
-    public void CallGlitchFX(float scanLineJitter, float verticalJump, float horizontalShake, float colorDrift,
-        float intensityOfDigital, bool isTemporary, float timeToReturn= 0.4f)
-    {
-        Debug.Log(digitalGlitch.intensity);
-        
-        digitalGlitch.intensity.Override(intensityOfDigital);
-        analogGlitch.colorDrift.Override(colorDrift);
-        analogGlitch.scanLineJitter.Override(scanLineJitter);
-        analogGlitch.verticalJump.Override(verticalJump);
-        analogGlitch.horizontalShake.Override(horizontalShake);
-
-        Debug.Log(digitalGlitch.intensity);
-        if (isTemporary)
-        {
-            StartCoroutine(TempGlitchFX(timeToReturn));
-        }
-    }
-
-    private IEnumerator TempGlitchFX(float timeToReturn)
-    {
-        //Se intentará hacer que progresivamente cambie de uno a otro más adelante.
-        
-        yield return new WaitForSeconds(timeToReturn);
-        
-        digitalGlitch.intensity.Override(defaultIntensityOfDigital);
-        analogGlitch.colorDrift.Override(defaultColorDrift);
-        analogGlitch.scanLineJitter.Override(defaultScanLineJitter);
-        analogGlitch.verticalJump.Override(defaultVerticalJump);
-        analogGlitch.horizontalShake.Override(defaultHorizontalShake);
-    }
+    
     
 }

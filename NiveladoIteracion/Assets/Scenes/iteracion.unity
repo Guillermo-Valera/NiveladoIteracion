@@ -3592,7 +3592,7 @@ PrefabInstance:
     - target: {fileID: 3347975801239415968, guid: 7f3c17e1adc0cc042afc9ec287c61e41, type: 3}
       propertyPath: globalVolume
       value: 
-      objectReference: {fileID: 743216382}
+      objectReference: {fileID: 0}
     - target: {fileID: 5353118579198851306, guid: 7f3c17e1adc0cc042afc9ec287c61e41, type: 3}
       propertyPath: patrolPoints.Array.size
       value: 4
@@ -5836,7 +5836,7 @@ PrefabInstance:
     - target: {fileID: 3347975801239415968, guid: d5c29cf0ab3dbd44e954bc6ed929b6f8, type: 3}
       propertyPath: globalVolume
       value: 
-      objectReference: {fileID: 743216382}
+      objectReference: {fileID: 0}
     - target: {fileID: 5353118579198851306, guid: d5c29cf0ab3dbd44e954bc6ed929b6f8, type: 3}
       propertyPath: patrolPoints.Array.size
       value: 3
@@ -6638,7 +6638,7 @@ PrefabInstance:
     - target: {fileID: 3347975801239415968, guid: d5c29cf0ab3dbd44e954bc6ed929b6f8, type: 3}
       propertyPath: globalVolume
       value: 
-      objectReference: {fileID: 743216382}
+      objectReference: {fileID: 0}
     - target: {fileID: 5353118579198851306, guid: d5c29cf0ab3dbd44e954bc6ed929b6f8, type: 3}
       propertyPath: currentState
       value: 1
@@ -11415,7 +11415,7 @@ PrefabInstance:
     - target: {fileID: 3347975801239415968, guid: d5c29cf0ab3dbd44e954bc6ed929b6f8, type: 3}
       propertyPath: globalVolume
       value: 
-      objectReference: {fileID: 743216382}
+      objectReference: {fileID: 0}
     - target: {fileID: 5353118579198851306, guid: d5c29cf0ab3dbd44e954bc6ed929b6f8, type: 3}
       propertyPath: 'patrolPoints.Array.data[0]'
       value: 
@@ -16757,6 +16757,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2585930491054532121, guid: 540f396d50b52664c82dfb25bcb53804, type: 3}
+      propertyPath: globalVolume
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4263954626801911188, guid: 540f396d50b52664c82dfb25bcb53804, type: 3}
       propertyPath: m_Name
       value: VFXManager
@@ -16802,7 +16806,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5903485639167386157, guid: 540f396d50b52664c82dfb25bcb53804, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 540f396d50b52664c82dfb25bcb53804, type: 3}
@@ -21661,17 +21666,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4928470168548712921, guid: 316feb88886031f4dbb62b4865fb48ad, type: 3}
   m_PrefabInstance: {fileID: 732817093}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &743216382 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2374231221605537998, guid: 540f396d50b52664c82dfb25bcb53804, type: 3}
-  m_PrefabInstance: {fileID: 530399438}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Core.Runtime::UnityEngine.Rendering.Volume
 --- !u!1 &751333363
 GameObject:
   m_ObjectHideFlags: 0
@@ -23260,7 +23254,7 @@ PrefabInstance:
     - target: {fileID: 3347975801239415968, guid: 7f3c17e1adc0cc042afc9ec287c61e41, type: 3}
       propertyPath: globalVolume
       value: 
-      objectReference: {fileID: 743216382}
+      objectReference: {fileID: 0}
     - target: {fileID: 5353118579198851306, guid: 7f3c17e1adc0cc042afc9ec287c61e41, type: 3}
       propertyPath: 'patrolPoints.Array.data[0]'
       value: 
@@ -23851,7 +23845,7 @@ PrefabInstance:
     - target: {fileID: 7315297840015335242, guid: 8ac1161bf51436141aa5751be1840a67, type: 3}
       propertyPath: globalVolume
       value: 
-      objectReference: {fileID: 743216382}
+      objectReference: {fileID: 0}
     - target: {fileID: 7930737970645742500, guid: 8ac1161bf51436141aa5751be1840a67, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5
@@ -31843,7 +31837,7 @@ PrefabInstance:
     - target: {fileID: 3347975801239415968, guid: d5c29cf0ab3dbd44e954bc6ed929b6f8, type: 3}
       propertyPath: globalVolume
       value: 
-      objectReference: {fileID: 743216382}
+      objectReference: {fileID: 0}
     - target: {fileID: 5353118579198851306, guid: d5c29cf0ab3dbd44e954bc6ed929b6f8, type: 3}
       propertyPath: currentState
       value: 1
@@ -44169,7 +44163,7 @@ PrefabInstance:
     - target: {fileID: 3347975801239415968, guid: f5571ac86e6fe4242903e019d37916e6, type: 3}
       propertyPath: globalVolume
       value: 
-      objectReference: {fileID: 743216382}
+      objectReference: {fileID: 0}
     - target: {fileID: 5353118579198851306, guid: f5571ac86e6fe4242903e019d37916e6, type: 3}
       propertyPath: 'patrolPoints.Array.data[0]'
       value: 
@@ -45715,7 +45709,7 @@ PrefabInstance:
     - target: {fileID: 3347975801239415968, guid: d5c29cf0ab3dbd44e954bc6ed929b6f8, type: 3}
       propertyPath: globalVolume
       value: 
-      objectReference: {fileID: 743216382}
+      objectReference: {fileID: 0}
     - target: {fileID: 5353118579198851306, guid: d5c29cf0ab3dbd44e954bc6ed929b6f8, type: 3}
       propertyPath: patrolPoints.Array.size
       value: 4
@@ -46743,7 +46737,7 @@ PrefabInstance:
     - target: {fileID: 3347975801239415968, guid: d5c29cf0ab3dbd44e954bc6ed929b6f8, type: 3}
       propertyPath: globalVolume
       value: 
-      objectReference: {fileID: 743216382}
+      objectReference: {fileID: 0}
     - target: {fileID: 5353118579198851306, guid: d5c29cf0ab3dbd44e954bc6ed929b6f8, type: 3}
       propertyPath: currentState
       value: 1
@@ -52934,7 +52928,7 @@ PrefabInstance:
     - target: {fileID: 3347975801239415968, guid: f5571ac86e6fe4242903e019d37916e6, type: 3}
       propertyPath: globalVolume
       value: 
-      objectReference: {fileID: 743216382}
+      objectReference: {fileID: 0}
     - target: {fileID: 5353118579198851306, guid: f5571ac86e6fe4242903e019d37916e6, type: 3}
       propertyPath: speed
       value: 1
@@ -53561,7 +53555,7 @@ PrefabInstance:
     - target: {fileID: 3347975801239415968, guid: d5c29cf0ab3dbd44e954bc6ed929b6f8, type: 3}
       propertyPath: globalVolume
       value: 
-      objectReference: {fileID: 743216382}
+      objectReference: {fileID: 0}
     - target: {fileID: 5353118579198851306, guid: d5c29cf0ab3dbd44e954bc6ed929b6f8, type: 3}
       propertyPath: currentState
       value: 1
@@ -58052,7 +58046,7 @@ PrefabInstance:
     - target: {fileID: 3347975801239415968, guid: 7f3c17e1adc0cc042afc9ec287c61e41, type: 3}
       propertyPath: globalVolume
       value: 
-      objectReference: {fileID: 743216382}
+      objectReference: {fileID: 0}
     - target: {fileID: 5353118579198851306, guid: 7f3c17e1adc0cc042afc9ec287c61e41, type: 3}
       propertyPath: 'patrolPoints.Array.data[0]'
       value: 
@@ -59051,7 +59045,7 @@ PrefabInstance:
     - target: {fileID: 3347975801239415968, guid: d5c29cf0ab3dbd44e954bc6ed929b6f8, type: 3}
       propertyPath: globalVolume
       value: 
-      objectReference: {fileID: 743216382}
+      objectReference: {fileID: 0}
     - target: {fileID: 5353118579198851306, guid: d5c29cf0ab3dbd44e954bc6ed929b6f8, type: 3}
       propertyPath: currentState
       value: 1
@@ -60313,7 +60307,7 @@ PrefabInstance:
     - target: {fileID: 3347975801239415968, guid: d5c29cf0ab3dbd44e954bc6ed929b6f8, type: 3}
       propertyPath: globalVolume
       value: 
-      objectReference: {fileID: 743216382}
+      objectReference: {fileID: 0}
     - target: {fileID: 5353118579198851306, guid: d5c29cf0ab3dbd44e954bc6ed929b6f8, type: 3}
       propertyPath: patrolPoints.Array.size
       value: 4
@@ -66223,7 +66217,7 @@ PrefabInstance:
     - target: {fileID: 3347975801239415968, guid: 7f3c17e1adc0cc042afc9ec287c61e41, type: 3}
       propertyPath: globalVolume
       value: 
-      objectReference: {fileID: 743216382}
+      objectReference: {fileID: 0}
     - target: {fileID: 5353118579198851306, guid: 7f3c17e1adc0cc042afc9ec287c61e41, type: 3}
       propertyPath: 'patrolPoints.Array.data[0]'
       value: 
@@ -66382,7 +66376,7 @@ PrefabInstance:
     - target: {fileID: 3347975801239415968, guid: f5571ac86e6fe4242903e019d37916e6, type: 3}
       propertyPath: globalVolume
       value: 
-      objectReference: {fileID: 743216382}
+      objectReference: {fileID: 0}
     - target: {fileID: 5353118579198851306, guid: f5571ac86e6fe4242903e019d37916e6, type: 3}
       propertyPath: currentState
       value: 1
@@ -66463,7 +66457,7 @@ PrefabInstance:
     - target: {fileID: 3347975801239415968, guid: d5c29cf0ab3dbd44e954bc6ed929b6f8, type: 3}
       propertyPath: globalVolume
       value: 
-      objectReference: {fileID: 743216382}
+      objectReference: {fileID: 0}
     - target: {fileID: 5353118579198851306, guid: d5c29cf0ab3dbd44e954bc6ed929b6f8, type: 3}
       propertyPath: currentState
       value: 1

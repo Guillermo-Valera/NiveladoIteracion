@@ -48,15 +48,6 @@ public class Health : MonoBehaviour
         {
             Die();
         }
-
-        if (VFXManager.Instance)
-            VFXManager.Instance.CallGlitchFX(
-                0.9f,
-                0.9f,
-                0.9f,
-                0.9f,
-                0.9f,
-                true);
     }
 
     private void UpdateVignette()
